@@ -4,10 +4,10 @@ const express = require("express");
 const cors = require("cors");
 //mongoose
 const mongoose = require("mongoose");
+const mongodb = require("mongodb");
 const router = require("./routes/userRoutes");
 
-const live_url =
-  "mongodb://ridwan-engr:Faadhilalabi@cluster0.rkal83t.mongodb.net/UserDB?appName=Cluster0";
+const live_url ="mongodb+srv://Agbolahan_ty:Agbolahan@cluster0.vnhhwvp.mongodb.net/UserDB?appName=Cluster0";
 const local_url = "mongodb://localhost:27017/AuthenticationDB";
 
 mongoose
@@ -17,7 +17,7 @@ mongoose
 
 //create express app
 const app = express();
-const port = 7777;
+const port = 9000;
 app.use(cors());
 app.use(express.json());
 
